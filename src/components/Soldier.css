@@ -1,0 +1,89 @@
+.soldier-container{
+    display: grid;
+    grid-template-areas: 
+    "i n n n"
+    "i a s s"
+    "i a t t"
+    ;
+    width: 60%;
+    font-size: small;
+    padding: 20px;
+    color: white;
+}
+
+.soldier-images{
+    grid-area: i;
+    z-index: 1;
+}
+.soldier-name{
+    grid-area: n;
+    display: flex;
+    gap: 20px;
+    margin: auto auto auto 10px;
+}
+
+.soldier-assets{
+    grid-area: a;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  10px 30px 10px 5px;
+}
+
+.soldier-assets-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap : 40px;
+    border-top : 1px solid rgba(245, 245, 245, 0.3);
+    padding: 5px;
+}
+.soldier-assets-item:hover{
+    filter: invert(100%);
+    background-color: rgb(0, 0, 0);
+}
+ 
+.soldier-stats{
+    grid-area: s;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    
+}
+
+
+.soldier-top{
+    grid-area: t;
+    display: grid;
+    grid-template-areas: 
+        "tv tp"
+        "tc ts"
+    ;
+    position: relative;
+    top: -50px;
+}
+
+.top-vehical:hover,
+.top-primary:hover,
+ .top-sidearm:hover ,
+ .top-class:hover {
+    filter: invert(100%)
+}
+
+.top-vehical{
+    grid-area: tv;
+}
+
+.top-primary{
+    grid-area: tp;
+    
+}
+
+.top-sidearm{
+    grid-area: ts;
+}
+
+.top-class{
+    grid-area: tc;
+}
