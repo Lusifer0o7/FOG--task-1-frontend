@@ -7,7 +7,7 @@ export default function Soldier() {
     const [data, setdata] = useState({})
 
     useEffect(() => {
-      axios.get("http://127.0.0.1:5000/api/v1/soldier")
+      axios.get("http://localhost:10000/api/v1/soldier")
       .then(res=> {setdata(res.data.soldier[0])})
       .catch(err=> console.log(err))
       
